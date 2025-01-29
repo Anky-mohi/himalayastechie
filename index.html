@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - TheEvent Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: TheEvent
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+
+  <style>
+
+/* Global Styling */
+
+@media (max-width: 768px) {
+    .schedule-section {
+        padding: 50px 20px !important;
+    }
+
+    .section-title h2 {
+        font-size: 2rem !important;
+    }
+
+    .section-title p {
+        font-size: 1rem !important;
+        padding: 0 10px;
+    }
+
+    .row.text-center {
+       
+    }
+
+    .section-box {
+        padding: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .section-box h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .section-box ul li {
+        font-size: 1rem !important;
+    }
+
+    .btn {
+        padding: 12px 30px !important;
+        font-size: 1rem !important;
+    }
+}
+
+
+
+
+
+/* Basic styling for the button */
+.cta-btn {
+  display: inline-block;
+  margin-top: 25px;
+  background: linear-gradient(135deg, #f82249, #f82249);
+  color: #fff;
+  padding: 20px 40px;  /* Increased padding for a larger button */
+  font-size: 22px;  /* Increased font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  max-width: 80%; /* Limit the width to make it more manageable on large screens */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hover effect to make it more engaging */
+.cta-btn:hover {
+  background: linear-gradient(135deg, #e52b55, #e52b55); /* Darker gradient on hover */
+  transform: translateY(-4px); /* Slightly lift the button */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Focus effect for accessibility */
+.cta-btn:focus {
+  outline: none;
+  border: 2px solid #e52b55; /* Outline effect on focus */
+  box-shadow: 0 0 0 4px rgba(229, 43, 85, 0.2); /* Soft glow on focus */
+}
+
+/* Active (click) effect */
+.cta-btn:active {
+  background: linear-gradient(135deg, #e52b55, #e52b55);
+  transform: translateY(2px); /* Button presses down */
+}
+
+/* Make sure it's visible and properly styled on mobile */
+@media (max-width: 767px) {
+  .cta-btn {
+    display: inline-block; /* Ensure the button is visible on mobile */
+    width: 100%; /* Full width on smaller screens */
+    padding: 25px 50px; /* Increased padding for a larger mobile button */
+    font-size: 24px; /* Increased font size for better readability */
+    border-radius: 30px; /* Slightly more rounded edges on mobile for a softer look */
+    margin-top: 30px; /* Add extra spacing on top */
+  }
+}
+
+/* Optional: For better large screen spacing */
+@media (min-width: 992px) {
+  .cta-btn {
+    margin-top: 50px; /* Add more spacing on large screens */
+    max-width: 60%; /* Limit the max-width for large screens */
+  }
+}
+
+
+  </style>
+</head>
+
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="">
+        <!-- Uncomment the line below if you also wish to use a text logo -->
+        <!-- <h1 class="sitename">TheEvent</h1>  -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Início<br></a></li>
+          <li><a href="#speakers">Mentores</a></li>
+          <li><a href="#schedule">Sobre</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="cta-btn d-none d-sm-block" href="#buy-tickets">Registre-se agora</a>
+
+    </div>
+  </header>
+
+
+
+
+
+
+  <main class="main">
+
+    <!-- Hero Section -->
+  
+
+
+
+
+
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+    
+      <div class="container d-flex flex-column align-items-center text-center mt-auto">
+        <h2 data-aos="fade-up" data-aos-delay="100" class="">Pronto Para Levar Seu Negócio no Mercado Livre ao Próximo Nível?</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Descubra como escalar suas vendas, automatizar operações e transformar seu e-commerce em uma máquina de resultados com a consultoria 'Caevana Premium'.</p>
+        
+       
+        
+
+
+
+        <a href="#cta-section" class="cta-btn d-none d-sm-block" data-aos="fade-up" data-aos-delay="400" style="display: inline-block; margin-top: 25px; background: linear-gradient(135deg, #f82249, #f82249); color: #fff; padding: 20px 40px; font-size: 20px; font-weight: bold; text-transform: uppercase; border-radius: 50px; text-align: center; transition: all 0.3s ease;">
+          Reserve Sua Vaga Agora e Comece a Transformar Seu Negócio!
+      </a>
+      
+      <!-- Mobile-specific button -->
+      <a href="#cta-section" class="cta-btn-mobile d-sm-none" data-aos="fade-up" data-aos-delay="400" style="display: inline-block; margin-top: 25px; background: linear-gradient(135deg, #f82249, #f82249); color: #fff; padding: 20px 40px;  font-weight: bold; text-transform: uppercase; border-radius: 50px; text-align: center; transition: all 0.3s ease;">
+          Registre-se Agora
+      </a>
+      
+      </div>
+    
+      <div class="about-info mt-auto position-relative">
+        <div class="container position-relative" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>Sobre o Programa</h2>
+              <p>Descubra estratégias comprovadas para escalar suas vendas no Mercado Livre, automatizar processos e transformar seu e-commerce em um verdadeiro sucesso. Com a consultoria 'Caevana Premium', você receberá orientações personalizadas para maximizar seus resultados.</p>
+            </div>
+            <div class="col-lg-3">
+              <h3>Onde</h3>
+              <p>Online - Acesso Exclusivo</p>
+            </div>
+            <div class="col-lg-3">
+              <h3>Quando</h3>
+              <p>Inscrições Abertas Agora</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section><!-- /Hero Section -->
+    
+<!-- Speakers Section -->
+<section id="speakers" class="speakers section">
+
+  <!-- Section Title -->
+  <div class="container section-title text-center" data-aos="fade-up">
+    <h2>Nossos Mentores</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4 justify-content-center" style="background-color: #2f3549;"> <!-- Added justify-content-center -->
+
+      <!-- Speaker 1 -->
+      <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="member">
+          <img src="assets/img/img/left.png" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4><a href="speaker-details.html">Walter White</a></h4>
+              <span>Quas alias incidunt</span>
+            </div>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Speaker 1 -->
+
+      <!-- Speaker 2 -->
+      <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="member">
+          <img src="assets/img/img/middle.png" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4><a href="speaker-details.html">Hubert Hirthe</a></h4>
+              <span>Consequuntur odio aut</span>
+            </div>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Speaker 2 -->
+
+      <!-- Speaker 3 -->
+      <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="member">
+          <img src="assets/img/img/right.png" class="img-fluid" alt="">
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4><a href="speaker-details.html">William Anderson</a></h4>
+              <span>Debitis iure vero</span>
+            </div>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Speaker 3 -->
+
+    </div>
+  </div>
+
+</section><!-- /Speakers Section -->
+
+
+
+
+
+<section id="caevana-premium" class="schedule-section" style="background-color: #f8f9fa; padding: 80px 0;">
+  <div class="container">
+      <!-- Section 1: Program Presentation -->
+      <div class="section-title mb-5 text-center">
+          <h2 class="text-primary" style="font-weight: bold; font-size: 2.8rem; color: #0e1b4d;">🌊 <span style="font-weight: lighter; font-size: 1.4rem;">"O Mercado Livre é um Mar de Oportunidades, Mas Você Está Preparado Para Navegá-lo?"</span></h2>
+          <p class="text-muted" style="font-size: 1.2rem; font-weight: 400; max-width: 900px; margin: 0 auto;">
+              Se você já vende no Mercado Livre, mas sente que está travado ou não sabe como escalar suas vendas, a consultoria <strong>"Caevana Premium"</strong> é exatamente o que você precisa.
+          </p>
+          <p class="text-muted mb-5" style="font-size: 1.1rem; font-weight: 400; max-width: 900px; margin: 20px auto;">
+              Este programa foi criado para empreendedores que desejam superar barreiras, dominar estratégias avançadas e transformar suas operações digitais em verdadeiras máquinas de vendas. Combinando encontros práticos, suporte individual e networking exclusivo, você terá tudo o que precisa para alcançar novos patamares no e-commerce.
+          </p>
+      </div>
+
+      <div class="row text-center" style="margin-top: -100px;">
+          <!-- Left Column: O Que Você Vai Aprender -->
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="section-box" style="background-color: #ffffff; border-radius: 10px; padding: 25px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                  <h3 class="section-title" style="font-size: 1.8rem; font-weight: 600;">📚 O Que Você Vai Aprender?</h3>
+                  <p class="text-muted" style="font-size: 1.1rem; margin-top: -30px; font-weight: 400;">"Estratégias Avançadas, Resultados Reais"</p>
+                  <ul class="list-unstyled">
+                      <li>📈 Aumentar suas vendas no Mercado Livre</li>
+                      <li>⚙️ Automatizar suas operações</li>
+                      <li>💰 Maximizar seus lucros</li>
+                      <li>🚀 Escalar sua operação</li>
+                      <li>🌐 Liderar com inteligência</li>
+                  </ul>
+              </div>
+          </div>
+
+          <!-- Middle Column: Estrutura do Programa -->
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="section-box" style="background-color: #ffffff; border-radius: 10px; padding: 25px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                  <h3 class="section-title" style="font-size: 1.8rem; font-weight: 600;">🏗️ Estrutura do Programa</h3>
+                  <p class="text-muted" style="font-size: 1.1rem; margin-top: -30px; font-weight: 400;">"Consultoria Completa Para Transformar Seu Negócio em 4 Meses"</p>
+                  <ul class="list-unstyled">
+                      <li>📅 Início: 02/01/2025</li>
+                      <li>⏳ Duração: 3 meses (até 01/05/2025)</li>
+                      <li>🕒 Encontros: Terças e quintas, 19h-21h, ao vivo</li>
+                      <li>
+                          💡 Formato:
+                          <ul class="list-unstyled">
+                              <li>• Encontros interativos em grupo</li>
+                              <li>• 4h de suporte individual com mentores</li>
+                              <li>• Networking exclusivo</li>
+                              <li>• Materiais exclusivos (apostilas, templates)</li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+          <!-- Right Column: Benefícios Exclusivos -->
+          <div class="col-lg-4 col-md-12 mb-4">
+              <div class="section-box" style="background-color: #ffffff; border-radius: 10px; padding: 25px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                  <h2 class="section-title">🎯 Benefícios Exclusivos</h2>
+                  <p class="text-muted" style="font-size: 1.1rem; margin-top: -30px; font-weight: 400;">"Por Que a Consultoria 'Caevana Premium' é o Melhor Investimento Para o Seu Negócio?"</p>
+                  <ul class="list-unstyled">
+                      <li>📊 Aprendizado com especialistas</li>
+                      <li>🤝 Networking valioso com outros empreendedores</li>
+                      <li>📚 Conteúdo direto ao ponto</li>
+                      <li>💼 Acompanhamento personalizado</li>
+                      <li>🚀 Resultados rápidos e concretos</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <!-- Call to Action Button -->
+      <div class="text-center mt-5">
+          <a href="#contact" class="btn btn-lg text-white shadow-lg" style="background-color: #f82249; border-radius: 30px; padding: 15px 40px; font-size: 1.1rem; transition: 0.3s;">
+              Inicie Sua Jornada com Caevana Premium
+          </a>
+      </div>
+  </div>
+</section>
+
+<!-- Add FontAwesome CDN link for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+
+
+
+
+
+
+<!-- Seção 5: Prova Social (Depoimentos em Vídeo) -->
+<section id="prova-social" class="py-5" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold" style="color: #0e1b4d;">📢 O Que Nossos Alunos Dizem?</h2>
+    </div>
+
+    <!-- Video Testimonials Grid (Centered for Instagram Format) -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+      
+      <!-- Testimonial 1 -->
+      <div class="col d-flex justify-content-center">
+        <div class="testimonial-box p-3 bg-white shadow-sm rounded text-center">
+          <video controls class="w-100 rounded" style="max-width: 280px; aspect-ratio: 9/16;">
+            <source src="assets/img/img/depoimento2.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <h5 class="fw-bold mt-3" style="color: #0e1b4d;">João Silva</h5>
+          <span class="text-muted">Empreendedor</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col d-flex justify-content-center">
+        <div class="testimonial-box p-3 bg-white shadow-sm rounded text-center">
+          <video controls class="w-100 rounded" style="max-width: 280px; aspect-ratio: 9/16;">
+            <source src="assets/img/img/depoimento4.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <h5 class="fw-bold mt-3" style="color: #0e1b4d;">Maria Oliveira</h5>
+          <span class="text-muted">Empresária</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col d-flex justify-content-center">
+        <div class="testimonial-box p-3 bg-white shadow-sm rounded text-center">
+          <video controls class="w-100 rounded" style="max-width: 280px; aspect-ratio: 9/16;">
+            <source src="assets/img/img/depoimento1.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <h5 class="fw-bold mt-3" style="color: #0e1b4d;">Carlos Mendes</h5>
+          <span class="text-muted">Vendedor Online</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="col d-flex justify-content-center">
+        <div class="testimonial-box p-3 bg-white shadow-sm rounded text-center">
+          <video controls class="w-100 rounded" style="max-width: 280px; aspect-ratio: 9/16;">
+            <source src="assets/img/img/depoimento6.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+          <h5 class="fw-bold mt-3" style="color: #0e1b4d;">Fernanda Lima</h5>
+          <span class="text-muted">Empreendedora Digital</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Seção 7: Call-to-Action Final -->
+<section id="cta-final" class="py-5 text-center" style="background-color: #2f3549; color: #ffffff;">
+  <div class="container">
+    <h2 class="fw-bold mb-3" style="color: #ffffff;">🚀 Pronto Para Escalar Suas Vendas e Dominar o Mercado Livre?</h2>
+    <p class="lead mb-4" style="color: #ffffff; max-width: 800px; margin: 0 auto;">
+      As vagas para a consultoria <strong>"Caevana Premium"</strong> são limitadas, garantindo que cada participante tenha o acompanhamento necessário para transformar seu negócio.
+    </p>
+    <p class="fw-bold" style="color: #ffffff; font-size: 1.2rem;">
+      📅 Início em 02/01/2025. Não perca essa oportunidade única de revolucionar suas vendas!
+    </p>
+
+    <!-- Call-to-Action Button -->
+    <a href="#inscricao" class="btn btn-lg text-white shadow-lg mt-3" 
+       style="background-color: #f82249; border-radius: 30px; padding: 15px 40px; font-size: 1.1rem; transition: 0.3s;">
+      🔥 Garanta Sua Vaga Agora!
+    </a>
+  </div>
+</section>
+
+
+
+
+    
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="sponsors section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Sponsors</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0 clients-wrap">
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-3 col-md-4 client-logo">
+            <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Sponsors Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <div class="faq-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <div class="faq-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
+                <div class="faq-content">
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
+                <div class="faq-content">
+                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+<!-- Seção de Contato -->
+<section id="contact" class="contact section">
+
+  <!-- Título da Seção -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contato</h2>
+    <p>Necessitamos de sua opinião para melhorar sempre nossos serviços e atendê-lo da melhor maneira!</p>
+  </div><!-- Fim do Título da Seção -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6">
+        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt"></i>
+          <h3>Endereço</h3>
+          <p>Avenida Adam 108, Nova York, NY 535022</p>
+        </div>
+      </div><!-- Fim do Info Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone"></i>
+          <h3>Ligue para nós</h3>
+          <p>+1 5589 55488 55</p>
+        </div>
+      </div><!-- Fim do Info Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope"></i>
+          <h3>Envie um e-mail</h3>
+          <p>info@exemplo.com</p>
+        </div>
+      </div><!-- Fim do Info Item -->
+
+    </div>
+
+    <div class="row gy-4 mt-1">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><!-- Fim do Google Maps -->
+
+      <div class="col-lg-6">
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Seu Nome" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Seu E-mail" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Assunto" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Carregando</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
+
+              <button type="submit">Enviar Mensagem</button>
+            </div>
+
+          </div>
+        </form>
+      </div><!-- Fim do Formulário de Contato -->
+
+    </div>
+
+  </div>
+
+</section><!-- Fim da Seção de Contato -->
+
+    
+
+
+
+
+
+
+
+
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">Caevana Premium</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Pronto Para Levar Seu Negócio no Mercado Livre ao Próximo Nível?</p>
+              <p>Descubra como escalar suas vendas, automatizar operações e transformar seu e-commerce em uma máquina de resultados com a consultoria "Caevana Premium".</p>
+              <p class="mt-3"><strong>Reserve Sua Vaga Agora e Comece a Transformar Seu Negócio!</strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>O Mercado Livre é um Mar de Oportunidades, Mas Você Está Preparado Para Navegá-lo?</h4>
+            <ul>
+              <li><a href="#">Sobre o Programa</a></li>
+              <li><a href="#">Como Funciona</a></li>
+              <li><a href="#">Testemunhos de Clientes</a></li>
+              <li><a href="#">Inscrição</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Consultoria Caevana Premium</h4>
+            <ul>
+              <li><a href="#">Estratégias Avançadas de Vendas</a></li>
+              <li><a href="#">Automatização de Operações</a></li>
+              <li><a href="#">Suporte Individual</a></li>
+              <li><a href="#">Networking Exclusivo</a></li>
+              <li><a href="#">Acompanhamento de Resultados</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Transforme Seu E-commerce</h4>
+            <ul>
+              <li><a href="#">Escalando Operações Digitais</a></li>
+              <li><a href="#">Maximize Suas Vendas no Mercado Livre</a></li>
+              <li><a href="#">Aprimorando Processos de Vendas</a></li>
+              <li><a href="#">Construindo um Negócio de Sucesso</a></li>
+              <li><a href="#">Estudo de Casos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Entre em Contato</h4>
+            <ul>
+              <li><a href="#">Suporte</a></li>
+              <li><a href="#">Consultoria</a></li>
+              <li><a href="#">Agendar uma Sessão</a></li>
+              <li><a href="#">Fale Conosco</a></li>
+              <li><a href="#">Mais Informações</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © Copyright <strong><span>Caevana Premium</span></strong>. Todos os Direitos Reservados
+          </div>
+          <div class="credits">
+            <!-- Todos os links no rodapé devem permanecer intactos. -->
+            <!-- Você pode excluir os links apenas se comprou a versão pro. -->
+            <!-- Informações sobre licenciamento: https://bootstrapmade.com/license/ -->
+            <!-- Compre a versão pro com formulário de contato PHP/AJAX funcionando: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+            Criado por <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
