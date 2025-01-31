@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - TheEvent Bootstrap Template</title>
+  <title>caevana</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -27,13 +27,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: TheEvent
-  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 
 
   <style>
@@ -85,7 +78,7 @@
 .cta-btn {
   display: inline-block;
   margin-top: 25px;
-  background: linear-gradient(135deg, #f82249, #f82249);
+  background: linear-gradient(135deg, blue, blue);
   color: #fff;
   padding: 20px 40px;  /* Increased padding for a larger button */
   font-size: 22px;  /* Increased font size */
@@ -103,7 +96,7 @@
 
 /* Hover effect to make it more engaging */
 .cta-btn:hover {
-  background: linear-gradient(135deg, #e52b55, #e52b55); /* Darker gradient on hover */
+  background: linear-gradient(135deg, blue, blue); /* Darker gradient on hover */
   transform: translateY(-4px); /* Slightly lift the button */
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
@@ -111,13 +104,13 @@
 /* Focus effect for accessibility */
 .cta-btn:focus {
   outline: none;
-  border: 2px solid #e52b55; /* Outline effect on focus */
+  border: 2px solid blue; /* Outline effect on focus */
   box-shadow: 0 0 0 4px rgba(229, 43, 85, 0.2); /* Soft glow on focus */
 }
 
 /* Active (click) effect */
 .cta-btn:active {
-  background: linear-gradient(135deg, #e52b55, #e52b55);
+  background: linear-gradient(135deg, blue, blue);
   transform: translateY(2px); /* Button presses down */
 }
 
@@ -139,6 +132,98 @@
     margin-top: 50px; /* Add more spacing on large screens */
     max-width: 60%; /* Limit the max-width for large screens */
   }
+}
+
+.icon-logo {
+    width: 30px; /* Smaller icon size */
+    height: 30px;
+    object-fit: contain;
+    margin-right: 10px; /* Space between icon and text */
+  }
+
+  .d-flex {
+    display: flex;
+  }
+
+  .align-items-center {
+    align-items: center;
+  }
+
+  .ml-2 {
+    margin-left: 10px;
+  }
+
+
+ 
+  .text-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+  }
+
+  .icon-logo {
+    width: 40px;  /* Adjust icon size */
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .cta-btn, .cta-btn-mobile {
+    display: inline-block;
+    margin-top: 25px;
+    background: linear-gradient(135deg, blue, blue);
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .text-icon span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+
+
+
+
+  .hero .about-info  .logo {
+   /* Adjust to the size you want */
+  height: 50px; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Centers the icon */
+  object-fit: contain; /* Ensures the image fits well inside the container */
+  justify-content: center;
+  margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+}
+.hero .about-info  .logol {
+   /* Adjust to the size you want */
+  height: 50px; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Centers the icon */
+  object-fit: contain; /* Ensures the image fits well inside the container */
+  justify-content: center;
+  margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 600px;
+}
+
+
+
+
+
+
+.hero img .logo {
+  width: 100px;
 }
 
 
@@ -179,62 +264,98 @@
 
     <!-- Hero Section -->
   
+   
 
 
 
 
-
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
     
-      <div class="container d-flex flex-column align-items-center text-center mt-auto">
-        <h2 data-aos="fade-up" data-aos-delay="100" class="">Pronto Para Levar Seu Negócio no Mercado Livre ao Próximo Nível?</h2>
-        <p data-aos="fade-up" data-aos-delay="200">Descubra como escalar suas vendas, automatizar operações e transformar seu e-commerce em uma máquina de resultados com a consultoria 'Caevana Premium'.</p>
+
+
+
+
+
+    
+
+<section id="hero" class="hero section dark-background">
+
+  <img src="assets/img/hero-bg.jpeg" alt="" data-aos="fade-in" class="">
+  
+  <div class="container d-flex flex-column align-items-start text-left mt-auto">
+    <h2 data-aos="fade-up" data-aos-delay="100" class="">
+      Pronto para faturar milhões no <span style="color: yellow;">Mercado Livre</span> com constância?
+    </h2>
+
+   
+    <p data-aos="fade-up" data-aos-delay="200">
+      Descubra como escalar suas vendas, automatizar operações e transformar seu e-commerce em uma máquina de resultados com a consultoria 'Caevana Premium'.
+    </p>
+
+    <a href="#cta-section" class="cta-btn d-none d-sm-block" data-aos="fade-up" data-aos-delay="400" style="display: inline-block; margin-top: 25px; background: linear-gradient(135deg, blue, blue); color: #fff; padding: 20px 40px; font-size: 20px; font-weight: bold; text-transform: uppercase; border-radius: 50px; text-align: center; transition: all 0.3s ease;">
+      Reserve Sua Vaga Agora e Comece a Transformar Seu Negócio!
+    </a>
+
+    <!-- Mobile-specific button -->
+    <a href="#cta-section" class="cta-btn-mobile d-sm-none" data-aos="fade-up" data-aos-delay="400" style="display: inline-block; margin-top: 25px; background: linear-gradient(135deg, blue, blue); color: #fff; padding: 20px 40px; font-weight: bold; text-transform: uppercase; border-radius: 50px; text-align: center; transition: all 0.3s ease;">
+      Registre-se Agora
+    </a>
+  
+  </div>
+
+  
+
+
+
+  <div class="about-info mt-auto position-relative">
+    <div class="container position-relative" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-6 text-left">
+          <h2>Sobre o Programa</h2>
+          <p>
+            Descubra estratégias comprovadas para escalar suas vendas no 
+            <span style="color: yellow;">Mercado Livre</span>, automatizar processos e transformar seu negócio em um verdadeiro sucesso. 
+            Com a consultoria 'Caevana Premium', você receberá orientações personalizadas para maximizar seus resultados.
+          </p>
+        </div>
+        
         
        
-        
 
 
+<img class="logo" src="/assets/img/logo.png" />
+       
 
-        <a href="#cta-section" class="cta-btn d-none d-sm-block" data-aos="fade-up" data-aos-delay="400" style="display: inline-block; margin-top: 25px; background: linear-gradient(135deg, #f82249, #f82249); color: #fff; padding: 20px 40px; font-size: 20px; font-weight: bold; text-transform: uppercase; border-radius: 50px; text-align: center; transition: all 0.3s ease;">
-          Reserve Sua Vaga Agora e Comece a Transformar Seu Negócio!
-      </a>
-      
-      <!-- Mobile-specific button -->
-      <a href="#cta-section" class="cta-btn-mobile d-sm-none" data-aos="fade-up" data-aos-delay="400" style="display: inline-block; margin-top: 25px; background: linear-gradient(135deg, #f82249, #f82249); color: #fff; padding: 20px 40px;  font-weight: bold; text-transform: uppercase; border-radius: 50px; text-align: center; transition: all 0.3s ease;">
-          Registre-se Agora
-      </a>
-      
+<img class="logol" src="/assets/img/WhatsApp_Image_2025-01-30_at_9.17.17_AM-removebg-preview.png" />
+
       </div>
-    
-      <div class="about-info mt-auto position-relative">
-        <div class="container position-relative" data-aos="fade-up">
-          <div class="row">
-            <div class="col-lg-6">
-              <h2>Sobre o Programa</h2>
-              <p>Descubra estratégias comprovadas para escalar suas vendas no Mercado Livre, automatizar processos e transformar seu e-commerce em um verdadeiro sucesso. Com a consultoria 'Caevana Premium', você receberá orientações personalizadas para maximizar seus resultados.</p>
-            </div>
-            <div class="col-lg-3">
-              <h3>Onde</h3>
-              <p>Online - Acesso Exclusivo</p>
-            </div>
-            <div class="col-lg-3">
-              <h3>Quando</h3>
-              <p>Inscrições Abertas Agora</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-    </section><!-- /Hero Section -->
+    </div>
+  </div>
+  
+
+  
+  
+
+</section><!-- /Hero Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 <!-- Speakers Section -->
 <section id="speakers" class="speakers section">
 
   <!-- Section Title -->
   <div class="container section-title text-center" data-aos="fade-up">
-    <h2>Nossos Mentores</h2>
+    <h2>OS ESPECIALISTAS QUE VÃO ESTAR NA SUA JORNADA AO SUCESSO</h2>
   </div><!-- End Section Title -->
 
   <div class="container">
@@ -246,15 +367,17 @@
           <img src="assets/img/img/left.png" class="img-fluid" alt="">
           <div class="member-info">
             <div class="member-info-content">
-              <h4><a href="speaker-details.html">Walter White</a></h4>
-              <span>Quas alias incidunt</span>
+              <h4><a href="">Evandro Dias Moreira</a></h4>
+              <span>Evandro aos 39 anos, deixou para
+                trás uma vida consolidada em
+                Juiz de Fora para recomeçar do
+                zero em Alphaville, impulsionado
+                por seu propósito maior e pela fé.
+                Em menos de um ano,
+                transformou 5 mil reais em uma
+                história de sucesso, faturando +11 milhões e construindo uma vida para sua família</span>
             </div>
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
+           
           </div>
         </div>
       </div><!-- End Speaker 1 -->
@@ -265,15 +388,19 @@
           <img src="assets/img/img/middle.png" class="img-fluid" alt="">
           <div class="member-info">
             <div class="member-info-content">
-              <h4><a href="speaker-details.html">Hubert Hirthe</a></h4>
-              <span>Consequuntur odio aut</span>
+              <h4><a href="">Andre Braga</a></h4>
+              <span>André, com mais de 20 anos de
+                experiência em marketplaces,
+                soma uma trajetória marcada
+                por conquistas em diversos
+                setores. Poliglota e consultor
+                certificado pelo Mercado Livre,
+                ele traz à Caevana a solidez de
+                quem já transformou desafios
+                em oportunidades milionárias e
+                faturou +30 milhões em 2024.</span>
             </div>
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
+           
           </div>
         </div>
       </div><!-- End Speaker 2 -->
@@ -284,15 +411,19 @@
           <img src="assets/img/img/right.png" class="img-fluid" alt="">
           <div class="member-info">
             <div class="member-info-content">
-              <h4><a href="speaker-details.html">William Anderson</a></h4>
-              <span>Debitis iure vero</span>
+              <h4><a href="">Caio Kenji Imori</a></h4>
+              <span>Caio, um jovem ambicioso de 19
+                anos, descobriu cedo sua paixão
+                pelo empreendedorismo digital.
+                Desde os 14 anos, desafiou os
+                limites impostos pela idade e, com
+                disciplina e dedicação, alcançou
+                resultados impressionantes,
+                faturando 500 mil em 2024,
+                sempre guiado por uma rotina de
+                evolução contínua.</span>
             </div>
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
+           
           </div>
         </div>
       </div><!-- End Speaker 3 -->
@@ -310,12 +441,17 @@
   <div class="container">
       <!-- Section 1: Program Presentation -->
       <div class="section-title mb-5 text-center">
-          <h2 class="text-primary" style="font-weight: bold; font-size: 2.8rem; color: #0e1b4d;">🌊 <span style="font-weight: lighter; font-size: 1.4rem;">"O Mercado Livre é um Mar de Oportunidades, Mas Você Está Preparado Para Navegá-lo?"</span></h2>
-          <p class="text-muted" style="font-size: 1.2rem; font-weight: 400; max-width: 900px; margin: 0 auto;">
-              Se você já vende no Mercado Livre, mas sente que está travado ou não sabe como escalar suas vendas, a consultoria <strong>"Caevana Premium"</strong> é exatamente o que você precisa.
+          <h2 class="text-primary" style="font-weight: bold; font-size: 2.8rem; color: #0e1b4d;">🌊 <span style="font-weight: lighter; font-size: 1.4rem;">O MERCADO LIVRE VAI FORMAR VÁRIOS MILIONÁRIOS EM 2025 , MAS VOCÊ SABE COMO SER UM DELES ?
           </p>
           <p class="text-muted mb-5" style="font-size: 1.1rem; font-weight: 400; max-width: 900px; margin: 20px auto;">
-              Este programa foi criado para empreendedores que desejam superar barreiras, dominar estratégias avançadas e transformar suas operações digitais em verdadeiras máquinas de vendas. Combinando encontros práticos, suporte individual e networking exclusivo, você terá tudo o que precisa para alcançar novos patamares no e-commerce.
+            você já vende no Mercado Livre, mas sente que está travado ou não sabe como escalar suas vendas, a Consultoria Premium Caevana é exatamente o que você precisa.
+
+            Mais do que uma consultoria, um plano completo para o sucesso!
+            A Consultoria Premium da Caevana não é apenas um serviço — é uma transformação estratégica e prática, desenhada para levar você e o seu negócio a patamares extraordinários.
+            
+            Por 3 meses intensos e enriquecedores, você terá acesso a um programa que combina consultoria personalizada, aulas práticas com especialistas e ferramentas exclusivas, tudo planejado para atender às suas necessidades específicas, independentemente do seu nível de experiência.
+            
+            Comece agora a transformação que levará seu negócio a um novo nível!"
           </p>
       </div>
 
@@ -326,11 +462,17 @@
                   <h3 class="section-title" style="font-size: 1.8rem; font-weight: 600;">📚 O Que Você Vai Aprender?</h3>
                   <p class="text-muted" style="font-size: 1.1rem; margin-top: -30px; font-weight: 400;">"Estratégias Avançadas, Resultados Reais"</p>
                   <ul class="list-unstyled">
-                      <li>📈 Aumentar suas vendas no Mercado Livre</li>
-                      <li>⚙️ Automatizar suas operações</li>
-                      <li>💰 Maximizar seus lucros</li>
-                      <li>🚀 Escalar sua operação</li>
-                      <li>🌐 Liderar com inteligência</li>
+                      <ul class="list-unstyled">
+                          <li>🚀 <strong>Fundamentos do Sucesso Empresarial</strong></li>
+                          <li>📈 <strong>Mercado Livre em Alta Performance</strong></li>
+                          <li>🥇 <strong>Construção de Anúncios Vencedores</strong></li>
+                          <li>🚚 <strong>Alta Performance Para Conquistar o Full</strong></li>
+                          <li>🧗🏻‍♂️ <strong>Mercado Líder Platinum: Como Chegar e Permanecer no Topo</strong></li>
+                          <li>💼 <strong>Gestão Empresarial e Financeira</strong></li>
+                          <li>👨🏻‍💻 <strong>Operação e Logística Avançada</strong></li>
+                          <li>🏆 <strong>Liderança e Crescimento Sustentável</strong></li>
+                        </ul>
+                   
                   </ul>
               </div>
           </div>
@@ -341,16 +483,11 @@
                   <h3 class="section-title" style="font-size: 1.8rem; font-weight: 600;">🏗️ Estrutura do Programa</h3>
                   <p class="text-muted" style="font-size: 1.1rem; margin-top: -30px; font-weight: 400;">"Consultoria Completa Para Transformar Seu Negócio em 4 Meses"</p>
                   <ul class="list-unstyled">
-                      <li>📅 Início: 02/01/2025</li>
-                      <li>⏳ Duração: 3 meses (até 01/05/2025)</li>
-                      <li>🕒 Encontros: Terças e quintas, 19h-21h, ao vivo</li>
-                      <li>
-                          💡 Formato:
-                          <ul class="list-unstyled">
-                              <li>• Encontros interativos em grupo</li>
-                              <li>• 4h de suporte individual com mentores</li>
-                              <li>• Networking exclusivo</li>
-                              <li>• Materiais exclusivos (apostilas, templates)</li>
+                    <li>🚀 Transformação com Especialistas de Verdade</li>
+                    <li>🔗 Networking Que Abre Portas</li>
+                    <li>📚 Conteúdo Que Funciona</li>
+                    <li>🎯 Soluções Sob Medida Para Você</li>
+                    <li>🏆 Resultados Que Você Consegue Sentir em Pouco Tempo</li>
                           </ul>
                       </li>
                   </ul>
@@ -373,14 +510,27 @@
           </div>
       </div>
 
+
+
+
+
+
+
       <!-- Call to Action Button -->
       <div class="text-center mt-5">
-          <a href="#contact" class="btn btn-lg text-white shadow-lg" style="background-color: #f82249; border-radius: 30px; padding: 15px 40px; font-size: 1.1rem; transition: 0.3s;">
+          <a href="#contact" class="btn btn-lg text-white shadow-lg" style="background-color: blue; border-radius: 30px; padding: 15px 40px; font-size: 1.1rem; transition: 0.3s;">
               Inicie Sua Jornada com Caevana Premium
           </a>
       </div>
   </div>
 </section>
+
+
+
+
+
+
+
 
 <!-- Add FontAwesome CDN link for icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -439,16 +589,7 @@
       </div>
 
       <!-- Testimonial 4 -->
-      <div class="col d-flex justify-content-center">
-        <div class="testimonial-box p-3 bg-white shadow-sm rounded text-center">
-          <video controls class="w-100 rounded" style="max-width: 280px; aspect-ratio: 9/16;">
-            <source src="assets/img/img/depoimento6.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos.
-          </video>
-          <h5 class="fw-bold mt-3" style="color: #0e1b4d;">Fernanda Lima</h5>
-          <span class="text-muted">Empreendedora Digital</span>
-        </div>
-      </div>
+     
 
     </div>
   </div>
@@ -457,7 +598,120 @@
 
 
 
+<section class="cta-section">
+  <h2>E SE EU NÃO FIZER NADA?</h2>
+  <p>
+      Pense na situação em que você está agora. Quanto tempo mais você pode se dar ao luxo de esperar? O mundo não para, o mercado está em constante evolução, e aqueles que não agem ficam para trás.
+  </p>
+  <p>
+      Se você é jovem, ignorar essa oportunidade significa adiar sua independência financeira e ficar preso a caminhos que não trazem liberdade. Para empresários, estar fora do digital é perder dinheiro e espaço para concorrentes mais ágeis. Já para indústrias, depender de terceiros limita seu crescimento e lucros, comprometendo o potencial de escalar e atingir diretamente o consumidor final.
+  </p>
+  <h3>Agora, pergunte a si mesmo:</h3>
+  <ul>
+      <li>❓ Quanto você já perdeu por hesitar?</li>
+      <li>⏳ Quanto tempo e dinheiro ainda está disposto a sacrificar antes de agir?</li>
+  </ul>
+  <p>
+      A verdade é que o custo de não fazer nada é muito maior do que o investimento na consultoria. Continuar no mesmo lugar significa aceitar riscos desnecessários, erros caros e oportunidades desperdiçadas.
+  </p>
+  <p class="highlight">
+      A <strong>Consultoria Premium da Caevana</strong> é a chance de mudar a história da sua vida!
+  </p>
+  <p>
+      Ela oferece o método, o suporte e as estratégias necessárias para que você não apenas resolva esses problemas, mas transforme sua realidade de forma definitiva.
+  </p>
+  <h3 class="question">A pergunta que fica é:</h3>
+  <p class="cta-text">
+      Você vai esperar até que seja tarde demais ou vai escolher agir agora?
+  </p>
+  <a href="#consultoria" class="cta-button">Quero Mudar Minha Realidade!</a>
+</section>
+<style>
 
+.cta-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #f0f4f8;
+    border-left: 5px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.cta-section h2 {
+    font-size: 28px;
+    color: #007bff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.cta-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cta-section ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.highlight {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    background: rgba(0, 123, 255, 0.1);
+    padding: 10px;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+}
+
+.question {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cta-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: #007bff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
+
+</style>
 
 <!-- Seção 7: Call-to-Action Final -->
 <section id="cta-final" class="py-5 text-center" style="background-color: #2f3549; color: #ffffff;">
@@ -472,142 +726,83 @@
 
     <!-- Call-to-Action Button -->
     <a href="#inscricao" class="btn btn-lg text-white shadow-lg mt-3" 
-       style="background-color: #f82249; border-radius: 30px; padding: 15px 40px; font-size: 1.1rem; transition: 0.3s;">
+       style="background-color: blue; border-radius: 30px; padding: 15px 40px; font-size: 1.1rem; transition: 0.3s;">
       🔥 Garanta Sua Vaga Agora!
     </a>
   </div>
 </section>
 
 
-
-
-    
-
-    <!-- Sponsors Section -->
-    <section id="sponsors" class="sponsors section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Sponsors</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-0 clients-wrap">
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-3 col-md-4 client-logo">
-            <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Sponsors Section -->
-
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="faq-container">
-
-              <div class="faq-item faq-active">
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
-                <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
-                <div class="faq-content">
-                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
+<section id="consultoria-faq" class="faq section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Perguntas Frequentes</h2>
+    <p>Esclareça suas dúvidas sobre a Consultoria Premium da Caevana.</p>
+  </div>
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+        <div class="faq-container">
+          
+          <div class="faq-item">
+            <h3>📌 Eu sou iniciante e nunca vendi no Mercado Livre. Essa consultoria é para mim?</h3>
+            <div class="faq-content">
+              <p>Sim! A Consultoria Premium da Caevana é estruturada para atender tanto iniciantes quanto vendedores experientes. Se você nunca vendeu no Mercado Livre, vamos te ensinar desde os primeiros passos até a construção de uma operação lucrativa e escalável.</p>
             </div>
-
-          </div><!-- End Faq Column-->
-
+          </div>
+          
+          <div class="faq-item">
+            <h3>📌 Já vendo no Mercado Livre, mas bati um teto e não consigo crescer. A consultoria pode me ajudar?</h3>
+            <div class="faq-content">
+              <p>Com certeza! Se você já tem um negócio e sente que chegou no limite de faturamento, nossa consultoria vai te ajudar a identificar os gargalos e implementar estratégias avançadas para destravar seu crescimento e escalar suas vendas exponencialmente.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <h3>📌 Quanto tempo leva para ver resultados?</h3>
+            <div class="faq-content">
+              <p>Os primeiros resultados aparecem logo nas primeiras semanas, conforme você aplica as estratégias ensinadas. O tempo exato depende do seu nível de experiência e dedicação, mas nosso método é focado em trazer crescimento rápido, sustentável e exponencial.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <h3>📌 Eu preciso investir muito dinheiro além da consultoria?</h3>
+            <div class="faq-content">
+              <p>Não! Diferente de outros modelos de negócio, o Mercado Livre permite que você comece com um investimento reduzido. Além disso, ensinamos estratégias para você vender da forma mais eficiente possível, maximizando lucros e reduzindo custos.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <h3>📌 Se eu não gostar da consultoria ou achar que não é para mim, posso cancelar?</h3>
+            <div class="faq-content">
+              <p>Temos total confiança na qualidade da Consultoria Premium da Caevana, mas se em até 7 dias você sentir que não faz sentido para você, basta nos avisar e devolveremos seu investimento sem burocracia.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <h3>📌 Não tenho tempo para acompanhar as aulas ao vivo. Vou ficar para trás?</h3>
+            <div class="faq-content">
+              <p>Não! Todos os nossos encontros ao vivo ficam gravados e você pode assistir no seu ritmo, além de contar com suporte contínuo no grupo do WhatsApp e materiais exclusivos para garantir que não perca nada.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <h3>📌 Quais diferenciais tornam essa consultoria única?</h3>
+            <div class="faq-content">
+              <p>Diferente de cursos e mentorias genéricas, a Consultoria Premium da Caevana é totalmente prática e personalizada, com acompanhamento direto com especialistas que já faturaram milhões no Mercado Livre. Aqui, você aprende estratégias testadas e aplicáveis ao seu negócio, acelerando seus resultados, evitando erros comuns e encurtando seu caminho ao sucesso.</p>
+            </div>
+          </div>
+          
         </div>
-
       </div>
+    </div>
+  </div>
+</section>
 
-    </section><!-- /Faq Section -->
+
+
+
+
 <!-- Seção de Contato -->
 <section id="contact" class="contact section">
 
